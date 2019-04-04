@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/booystrap.min.css">
+    <title>EJS Engine</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Coins</h1>
+        <form action="/coins/post" method="post">
+            <div class="form-group">
+                <label for="item">Coin name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="item">Coin Price</label>
+                <input type="text" class="form-control" id="price" name="price">
+            </div>
+            <button type="submit" class="btn btn-default">Submit Coin</button>
+        </form>
+    </div>
+</body>
+</html>

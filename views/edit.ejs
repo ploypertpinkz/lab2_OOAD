@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Edit Coin</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Coin</h1>
+        <form method="post" action="/coins/update/<%= coin._id %>">
+          <div class="form-group">
+            <label for="item">Coin Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%= coin.name %>">
+          </div>
+          <div class="form-group">
+            <label for="item">Coin Price</label>
+            <input type="text" class="form-control" id="price" name="price" value="<%= coin.price %>">
+          </div>
+          <button type="submit" class="btn btn-default">Update</button>
+        </form>
+    </div>
+</body>
+</html>
